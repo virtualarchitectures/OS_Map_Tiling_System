@@ -6,6 +6,7 @@
 /Assets/AssetStoreTools*
 /Assets/3DModels
 /Assets/ThirdPartyPackages*
+/Assets/Resources*
 /Assets/PostProcessing*
 
 # Visual Studio cache directory
