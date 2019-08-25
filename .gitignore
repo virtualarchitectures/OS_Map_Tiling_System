@@ -4,8 +4,8 @@
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
-/Assets/3D Models
-/Assets/Third Party Packages*
+/Assets/3DModels
+/Assets/ThirdPartyPackages*
 /Assets/PostProcessing*
 
 # Visual Studio cache directory
