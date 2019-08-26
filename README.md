@@ -9,4 +9,4 @@ Project includes a map tile prefab, a preporocessed reference CSV of tile names 
 ## Data
 Uses Free Download of [OS Vector Map District](https://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html) raster tiles.
 
-Downloaded tiles should be placed in the project's resources folder.
+Downloaded tiles should be placed in the project foler `Assets/Resources/MapTiles`.
