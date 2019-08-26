@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
+    //User Coordinate
+    public Vector2 OSEastingNorthing;
+
     //Global offset
     public Vector3 globalOffset; 
 
@@ -41,10 +44,16 @@ public class MapController : MonoBehaviour
         //Create tiles
         generateMapTiles();
 
-        mapContainer.transform.position = globalOffset;
-
         //Load textures
         LoadTextures();
+
+        //Set Global Offset
+        globalOffset.x = - OSEastingNorthing.x;
+        globalOffset.z = - OSEastingNorthing.y;
+
+        //Apply Global Offset
+        mapContainer.transform.position = globalOffset;
+
 
     }
 
