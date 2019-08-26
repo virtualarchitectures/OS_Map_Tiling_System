@@ -104,7 +104,7 @@ public class MapController : MonoBehaviour
 
     void LoadTextures()
     {
-        textures = Resources.LoadAll<Texture2D>("OS OpenMap Local (Full Colour Raster) TQ/data");
+        textures = Resources.LoadAll<Texture2D>("MapTiles");
 
         foreach (var t in textures)
         {
