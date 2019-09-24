@@ -12,3 +12,6 @@ Uses Free Download of [OS Vector Map District](https://www.ordnancesurvey.co.uk/
 Downloaded tiles should be placed in the project folder `Assets/Resources/MapTiles`.
 
 Works with Unity [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351).
+
+## Acknowledgements
+This project is linked to research at CASA funded by the [Engineering and Physical Science Research Council (EPSRC)](https://epsrc.ukri.org/) and [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk/), the national mapping agency for Great Britain. 
