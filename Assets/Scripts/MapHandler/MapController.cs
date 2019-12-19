@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
+    [Header("Geographic coordinate for Unity origin")]
     //User Coordinate
-    public Vector2 OSEastingNorthing;
+    public Vector2 EastingNorthing;
 
     //Global offset
     public Vector3 globalOffset; 
@@ -13,6 +14,11 @@ public class MapController : MonoBehaviour
     //Map Container
     private GameObject mapContainer;
 
+    [Header("Tile Size (sq m)")]
+    //Tile Size
+    public int tileSize;
+
+    [Header("Resources")]
     //Map tile prefab
     public GameObject mapTilePrefab;
 
@@ -48,8 +54,8 @@ public class MapController : MonoBehaviour
         LoadTextures();
 
         //Set Global Offset
-        globalOffset.x = - OSEastingNorthing.x;
-        globalOffset.z = - OSEastingNorthing.y;
+        globalOffset.x = - EastingNorthing.x;
+        globalOffset.z = - EastingNorthing.y;
 
         //Apply Global Offset
         mapContainer.transform.position = globalOffset;
@@ -111,7 +117,7 @@ public class MapController : MonoBehaviour
             //Find object with the saame name as the texture
             var matchingTile = GameObject.Find(t.name);
             //Get a reference to the matching map tiles renderer
-            var rend = matchingTile.GetComponent< Renderer>();
+            var rend = matchingTile.GetComponent<Renderer>();
             //Add the texture to the base map
             rend.material.SetTexture("_BaseMap", t as Texture2D);
         }
@@ -123,7 +129,9 @@ public class MapController : MonoBehaviour
         for (int i = 0; i < parsedList.Count; i++)
         {
             //Instantiate prefab with offset on x and z axis to place bottom left of tile at coordinate
-            GameObject instance = Instantiate(mapTilePrefab, new Vector3(parsedList[i].xmin + 2500, 0, parsedList[i].ymin + 2500), Quaternion.Euler(0f, 180f, 0f)) as GameObject;
+            GameObject instance = Instantiate(mapTilePrefab, new Vector3(parsedList[i].xmin + (tileSize / 2), 0, parsedList[i].ymin + (tileSize / 2)), Quaternion.Euler(0f, 180f, 0f)) as GameObject;
+            //Scale the instantiated tile proportional tile size and scale of the tile prefab 
+            instance.transform.localScale = new Vector3(tileSize / (instance.GetComponent<Renderer>().bounds.size.x / mapTilePrefab.transform.localScale.x), 1, tileSize / (instance.GetComponent<Renderer>().bounds.size.z / mapTilePrefab.transform.localScale.z));
             //Assign the ID as the name of the instance
             instance.name = parsedList[i].tileName;
 

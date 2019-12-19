@@ -383,8 +383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cddc9d3603bc64f88ff2b30301f9bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OSEastingNorthing: {x: 537904, y: 184039}
-  globalOffset: {x: -500000, y: 0, z: -100000}
+  EastingNorthing: {x: 537904, y: 184041}
+  globalOffset: {x: 0, y: 0, z: 0}
+  tileSize: 5000
   mapTilePrefab: {fileID: 7110826819367394800, guid: f3f3faf3450dea34abe1bf9400a01c12,
     type: 3}
   tileCoordinatesFile: {fileID: 4900000, guid: 746c9238604a91a4aafdb464173e816a, type: 3}
