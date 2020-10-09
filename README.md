@@ -12,7 +12,7 @@ This Unity project includes the following components:
 
 ## Use
 
-1. To use this package you will need to download your own copies of the [OS Vector Map District](https://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html) raster tiles for the TQ grid square.
+1. To use this package you will need to download your own copies of the [OS Open Map Local](https://www.ordnancesurvey.co.uk/business-government/products/open-map-local) raster tiles for the TQ grid square.
 2. Downloaded tiles should be placed in the project folder `Assets/Resources/MapTiles`.
 3. Open the 'MapTiler' scene in Unity and press play.
 4. The MapController script will read the GeoTIFF tiles placed in the Recources folder and instantiate textured maptile prefabs according to OSGB eastings and northings held in the 'TileCoordinates' reference file. The tiles are parented to a map container object and shifted to world origin (0,0,0) using a global offset.
