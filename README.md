@@ -15,7 +15,10 @@ This Unity project includes the following components:
 1. To use this package you will need to download your own copies of the [OS Open Map Local](https://www.ordnancesurvey.co.uk/business-government/products/open-map-local) raster tiles for the TQ grid square.
 2. Downloaded tiles should be placed in the project folder `Assets/Resources/MapTiles`.
 3. Open the 'MapTiler' scene in Unity and press play.
-4. The MapController script will read the GeoTIFF tiles placed in the Recources folder and instantiate textured maptile prefabs according to OSGB eastings and northings held in the 'TileCoordinates' reference file. The tiles are parented to a map container object and shifted to world origin (0,0,0) using a global offset.
+4. The MapController script will read the GeoTIFF tiles placed in the Recources folder and instantiate textured maptile prefabs according to OSGB eastings and northings held in the 'TileCoordinates' reference file. The tiles are parented to a map container object and shifted to world origin (0,0,0) by applying an offset.
+
+![MapController](images/MapController.PNG)
+
 5. The user can specify a particular OSGB coordinate that will be used as the Unity world origin. This is currently set to the easting `X = 537904` and northing `Y = 184041` in the Unity inspector.
 6. The user can also set the map tile size in metres.
 
