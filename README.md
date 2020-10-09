@@ -17,6 +17,7 @@ This Unity project includes the following components:
 3. Open the 'MapTiler' scene in Unity and press play.
 4. The MapController script will read the GeoTIFF tiles placed in the Recources folder and instantiate textured maptile prefabs according to OSGB eastings and northings held in the 'TileCoordinates' reference file. The tiles are parented to a map container object and shifted to world origin (0,0,0) using a global offset.
 5. The user can specify a particular OSGB coordinate that will be used as the Unity world origin. This is currently set to the easting `X = 537904` and northing `Y = 184041` in the Unity inspector.
+6. The user can also set the map tile size in metres.
 
 This package can be used with Unity [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351) which will allow you to add a car or airplane to the scene.
 
