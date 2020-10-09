@@ -25,7 +25,9 @@ This Unity project includes the following components:
 This package can be used with Unity [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351) which will allow you to add a car or airplane to the scene.
 
 ## Adding coordinates for the rest of the UK
-If you wish to include other areas of the UK you would need to update the coordinate file. This can be done with a GIS. Alternatively you can use the FME workspace `MapTileBoundsExtractor.fmw` included with this project. This will extract coordinates from downloaded OS map tiles in the GeoTIFF format. To use the workspace you can download the [FME Desktop](https://www.safe.com/) by Safe Software which is free to use for non-commercial purposes with a trial or personal licence. When using the workspace it will prompt you to select the files you want to process and the folder location for the new TileCoordniates file to be output.
+If you wish to include other areas of the UK you would need to update the coordinate file. This can be done with a GIS. Alternatively you can use the FME workspace `MapTileBoundsExtractor.fmw` included with this project. This will extract coordinates from downloaded OS map tiles in the GeoTIFF format. 
+
+To use the workspace you can download the [FME Desktop](https://www.safe.com/) by Safe Software which is free to use for non-commercial purposes with a trial or personal licence. When using the workspace it will prompt you to select the files you want to process and the folder location for the new TileCoordniates file to be output.
 
 ## Acknowledgements
 This project is linked to research at CASA funded by the [Engineering and Physical Science Research Council (EPSRC)](https://epsrc.ukri.org/) and [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk/), the national mapping agency for Great Britain. 
