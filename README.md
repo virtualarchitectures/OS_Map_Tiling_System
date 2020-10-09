@@ -23,7 +23,7 @@ This package can be used with Unity [Standard Assets](https://assetstore.unity.c
 **Note:** The TileCoordinates file currently included in this package only provides coordinates for the TQ grid square of the British National Grid. This covers the majority of London and the region extending to the South of England. To test the package download that region first.
 
 ## Obtaining Coordinates for the rest of the UK
-If you wish to include other areas of the UK you would need to use a GIS to prepare your own coordinate file. Alternatively you can use the FME workspace `MapTileBoundsExtractor.fmw` included in this project to extract coordinates from downloaded OS map tiles in the GeoTIFF format. To use the workspace you can download the [FME Desktop](https://www.safe.com/) by Safe Software which is free to use for non-commercial purposes with a trial or personal licence.
+If you wish to include other areas of the UK you would need to use a GIS to prepare your own coordinate file. Alternatively you can use the FME workspace `MapTileBoundsExtractor.fmw` included in this project to extract coordinates from downloaded OS map tiles in the GeoTIFF format. To use the workspace you can download the [FME Desktop](https://www.safe.com/) by Safe Software which is free to use for non-commercial purposes with a trial or personal licence. When using the workspace it will prompt you to select the files you want to process and the folder location for the new TileCoordniates file to be output.
 
 ## Acknowledgements
 This project is linked to research at CASA funded by the [Engineering and Physical Science Research Council (EPSRC)](https://epsrc.ukri.org/) and [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk/), the national mapping agency for Great Britain. 
