@@ -18,9 +18,9 @@ This Unity project includes the following components:
 4. The MapController script will read the GeoTIFF tiles placed in the Recources folder and instantiate textured maptile prefabs according to OSGB eastings and northings held in the 'TileCoordinates' reference file. The tiles are parented to a map container object and shifted to world origin (0,0,0) using a global offset.
 5. The user can specify a particular OSGB coordinate that will be used as the Unity world origin. This is currently set to the easting `X = 537904` and northing `Y = 184041` in the Unity inspector.
 
-This package can be used with Unity [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351).
+This package can be used with Unity [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351) which will allow you to add a car or airplane to the scene.
 
-**Note:** The 'TileCoordinates.csv' file currently included in this package only provides coordinates for the TQ grid square of the British National Grid. This covers the majority of London and the region extending to the South of England. To test the package download that region first.
+**Note:** The TileCoordinates file currently included in this package only provides coordinates for the TQ grid square of the British National Grid. This covers the majority of London and the region extending to the South of England. To test the package download that region first.
 
 ## Obtaining Coordinates for the rest of the UK
 If you wish to include other areas of the UK you would need to use a GIS to prepare your own coordinate file. Alternatively you can use the FME workspace `MapTileBoundsExtractor.fmw` included in this project to extract coordinates from downloaded OS map tiles in the GeoTIFF format. To use the workspace you can download the [FME Desktop](https://www.safe.com/) by Safe Software which is free to use for non-commercial purposes with a trial or personal licence.
